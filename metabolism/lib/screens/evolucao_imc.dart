@@ -84,7 +84,9 @@ child:
         ],
       ),
       ),
-      body:Column(
+      body:SingleChildScrollView(
+             scrollDirection: Axis.vertical,
+            child:Column(
         children:[
           SizedBox(height:MediaQuery.of(context).size.width/35),
           Center(child:Text('IMC = 22.5',
@@ -164,19 +166,22 @@ child:
           ]),
           ]),
           ),
+          SizedBox(height:MediaQuery.of(context).size.height/20),
           Text('O seu IMC no dia 01/10/2020 era 23.13',
-          style: TextStyle(color: AppColors.dark_yellow,fontSize: MediaQuery.of(context).size.width/20),
+          style: TextStyle(color: Colors.black,fontSize: MediaQuery.of(context).size.width/20),
           ),
-          Text('O seu IMC no dia 01/11/2020 era 21.3',
-           style: TextStyle(color: AppColors.dark_yellow,fontSize: MediaQuery.of(context).size.width/20),
+          Text('O seu IMC no dia 01/11/2020 era 21.30',
+           style: TextStyle(color: Colors.black,fontSize: MediaQuery.of(context).size.width/20),
            ),
           Text('O seu IMC no dia 01/12/2020 era 26.71',
-           style: TextStyle(color: AppColors.dark_yellow,fontSize: MediaQuery.of(context).size.width/20),
+           style: TextStyle(color: Colors.black,fontSize: MediaQuery.of(context).size.width/20),
            ),
           Text('O seu IMC no dia 31/12/2020 era 27.15',
-           style: TextStyle(color: AppColors.dark_yellow,fontSize: MediaQuery.of(context).size.width/20),
+           style: TextStyle(color: Colors.black,fontSize: MediaQuery.of(context).size.width/20),
            ),
+
           ],
+          ),
       ),
     );
   }
