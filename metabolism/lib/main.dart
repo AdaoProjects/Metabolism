@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:metabolism/screens/avaliacao_medica.dart';
+import 'package:metabolism/screens/dados_pessoais.dart';
+import 'package:metabolism/screens/dicas.dart';
+import 'package:metabolism/screens/evolucao_imc.dart';
+import 'package:metabolism/screens/rotina_alimentar.dart';
+import 'package:metabolism/screens/sindrome_metabolica.dart';
+import 'package:metabolism/utilities/colors.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,9 +16,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Metabolism',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: MyHomePage(title: 'Café da manhã'),
     );
   }
@@ -31,10 +35,75 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[300],
+      backgroundColor: AppColors.light_green,
       appBar: AppBar(
+        backgroundColor: AppColors.dark_green,
         title: Text(widget.title),
       ),
+      drawer: Drawer(
+child:
+ ListView(
+    children: <Widget>[
+       UserAccountsDrawerHeader(
+  accountName: Text("Ádan Barbosa Ribeiro"),
+  accountEmail: Text("adanbribeiro@gmail.com"),
+  decoration: BoxDecoration(
+    color: AppColors.dark_green,
+  ),
+  currentAccountPicture: CircleAvatar(
+    backgroundColor: Colors.white,
+    child: Text(
+      "A",
+      style: TextStyle(fontSize: MediaQuery.of(context).size.width/7),
+    ),
+  ),
+),
+      ListTile(
+        onTap: (){
+           Navigator.push(context,MaterialPageRoute(builder: (context) => Dados_Pessoais()));
+        },
+        title: Text("Dados Pessoais"),
+        trailing: Icon(Icons.arrow_forward),
+      ),
+      ListTile(
+        onTap: (){
+           Navigator.push(context,MaterialPageRoute(builder: (context) => Avaliacao_Medica()));
+        },
+        title: Text("Avaliação Médica"),
+        trailing: Icon(Icons.arrow_forward),
+      ),
+      ListTile(
+        onTap: (){
+           Navigator.push(context,MaterialPageRoute(builder: (context) => Rotina_Alimentar()));
+        },
+        title: Text("Rotina de Alimentação"),
+        trailing: Icon(Icons.arrow_forward),
+      ),
+      ListTile(
+        onTap: (){
+           Navigator.push(context,MaterialPageRoute(builder: (context) => Evolucao_Imc()));
+        },
+        title: Text("Evolução do IMC"),
+        trailing: Icon(Icons.arrow_forward),
+      ),
+      ListTile(
+        onTap: (){
+           Navigator.push(context,MaterialPageRoute(builder: (context) => Sindrome_Metabolica()));
+        },
+        title: Text("Síndrome Metabólica"),
+        trailing: Icon(Icons.arrow_forward),
+      ),
+      ListTile(
+        onTap: (){
+           Navigator.push(context,MaterialPageRoute(builder: (context) => Dicas()));
+        },
+        title: Text("Dicas"),
+        trailing: Icon(Icons.arrow_forward),
+      ),
+        ],
+      ),
+      ),
+
       body:Center(
     child: Column(children:[
     SizedBox(height:MediaQuery.of(context).size.width/15),
@@ -45,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
     borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
   ),
       child: InkWell(
-        splashColor: Colors.blue.withAlpha(30),
+        splashColor: AppColors.dark_green.withAlpha(30),
         onTap: () {
           print('Card tapped.');
         },
@@ -80,7 +149,7 @@ class _MyHomePageState extends State<MyHomePage> {
     borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
   ),
       child: InkWell(
-        splashColor: Colors.blue.withAlpha(30),
+        splashColor: AppColors.dark_green.withAlpha(30),
         onTap: () {
           print('Card tapped.');
         },
@@ -89,7 +158,7 @@ class _MyHomePageState extends State<MyHomePage> {
           height: MediaQuery.of(context).size.height/4.2,
           child: Column(children:[
             ClipOval(
-    child: Image.asset('assets/images/cafe_da_manha/ovo.jpg',
+    child: Image.asset('assets/images/cafe_da_manha/ovos.jpg',
                 height:MediaQuery.of(context).size.height/5.5,
                 width:MediaQuery.of(context).size.width/2.3 ),
           ),
@@ -119,7 +188,7 @@ class _MyHomePageState extends State<MyHomePage> {
     borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
   ),
       child: InkWell(
-        splashColor: Colors.blue.withAlpha(30),
+        splashColor: AppColors.dark_green.withAlpha(30),
         onTap: () {
           print('Card tapped.');
         },
@@ -154,7 +223,7 @@ class _MyHomePageState extends State<MyHomePage> {
     borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
   ),
       child: InkWell(
-        splashColor: Colors.blue.withAlpha(30),
+        splashColor: AppColors.dark_green.withAlpha(30),
         onTap: () {
           print('Card tapped.');
         },
@@ -193,7 +262,7 @@ class _MyHomePageState extends State<MyHomePage> {
     borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
   ),
       child: InkWell(
-        splashColor: Colors.blue.withAlpha(30),
+        splashColor: AppColors.dark_green.withAlpha(30),
         onTap: () {
           print('Card tapped.');
         },
@@ -223,6 +292,42 @@ class _MyHomePageState extends State<MyHomePage> {
             
           ),
       ),
+
+      Card(
+        shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
+  ),
+      child: InkWell(
+        splashColor: AppColors.dark_green.withAlpha(30),
+        onTap: () {
+          print('Card tapped.');
+        },
+        child: Container(
+          width: MediaQuery.of(context).size.width/2.3,
+          height: MediaQuery.of(context).size.height/4.2,
+          child: Column(children:[
+            ClipOval(
+    child: Image.asset('assets/images/cafe_da_manha/cafe.jpg',
+                height:MediaQuery.of(context).size.height/5.5,
+                width:MediaQuery.of(context).size.width/2.3 ),
+          ),
+          Text('Café',
+            style:TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontSize: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .height / 30)
+            ),
+          ],
+          
+          ),
+)
+            
+          ),
+      ),
     
     ]
   ), // T
@@ -231,6 +336,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     ),
     floatingActionButton: FloatingActionButton(
+      backgroundColor: AppColors.dark_green,
       child: Icon(Icons.arrow_forward),
       onPressed: (){},
     ),

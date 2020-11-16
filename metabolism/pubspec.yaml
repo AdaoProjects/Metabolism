@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  fl_chart: ^0.12.0
   flutter:
     sdk: flutter
 
@@ -45,11 +46,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/cafe_da_manha/ovo.jpg
+    - assets/images/cafe_da_manha/ovos.jpg
     - assets/images/cafe_da_manha/pao.jpg
     - assets/images/cafe_da_manha/cuscuz.jpg
     - assets/images/cafe_da_manha/leite.jpg
     - assets/images/cafe_da_manha/bacon.jpg
+    - assets/images/cafe_da_manha/cafe.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
