@@ -17,6 +17,7 @@ class _Avaliacao_MedicaState extends State<Avaliacao_Medica> with SingleTickerPr
 
     return Scaffold(
        appBar: AppBar(
+         backgroundColor: AppColors.dark_pink,
         title: Text('Avaliação Médica'),
         centerTitle: true,
       ),
@@ -28,7 +29,7 @@ child:
   accountName: Text("Ádan Barbosa Ribeiro"),
   accountEmail: Text("adanbribeiro@gmail.com"),
   decoration: BoxDecoration(
-    color: AppColors.dark_green,
+    color: AppColors.dark_pink,
   ),
   currentAccountPicture: CircleAvatar(
     backgroundColor: Colors.white,
@@ -84,7 +85,96 @@ child:
       ),
       ),
       body:Center(
-        child: Text('Avaliação Médica'),
+        child: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child:  Column(
+        children:[
+          SizedBox(height:MediaQuery.of(context).size.height/18),
+          Row(children: [
+            SizedBox(width:MediaQuery.of(context).size.width/7),
+            Container(width:MediaQuery.of(context).size.width/1.4,
+          height:MediaQuery.of(context).size.height/12,
+          child: TextField(
+            decoration: InputDecoration(
+            enabledBorder: UnderlineInputBorder(      
+              borderSide: BorderSide(color: AppColors.dark_pink),   
+              ),
+            labelText:'Pressão (exemplo 12/8)',),
+            keyboardType: TextInputType.number,
+  textAlign: TextAlign.center,
+),
+),
+          ],),
+SizedBox(height:MediaQuery.of(context).size.height/23),
+
+Container(width:MediaQuery.of(context).size.width/1.4,
+          height:MediaQuery.of(context).size.height/12,
+          child: TextField(
+            decoration: InputDecoration(
+            enabledBorder: UnderlineInputBorder(      
+              borderSide: BorderSide(color: AppColors.dark_pink),   
+              ),
+            labelText:'Circunf. Abdominal (cm)',
+  ),
+  keyboardType: TextInputType.number,
+  textAlign: TextAlign.center,
+),
+),
+SizedBox(height:MediaQuery.of(context).size.height/23),
+Container(width:MediaQuery.of(context).size.width/1.4,
+          height:MediaQuery.of(context).size.height/12,
+          child: TextField(
+            decoration: InputDecoration(
+            enabledBorder: UnderlineInputBorder(      
+              borderSide: BorderSide(color: AppColors.dark_pink),   
+              ),
+            labelText:'HDL (opcional)',
+  ),
+  keyboardType: TextInputType.number,
+  textAlign: TextAlign.center,
+),
+),
+SizedBox(height:MediaQuery.of(context).size.height/23),
+Container(width:MediaQuery.of(context).size.width/1.4,
+          height:MediaQuery.of(context).size.height/12,
+          child: TextField(
+            decoration: InputDecoration(
+              enabledBorder: UnderlineInputBorder(      
+              borderSide: BorderSide(color: AppColors.dark_pink),   
+              ),
+            labelText:'Glicemia (opcional)',
+  ),
+  keyboardType: TextInputType.number,
+  textAlign: TextAlign.center,
+),
+),
+SizedBox(height:MediaQuery.of(context).size.height/23),
+Container(width:MediaQuery.of(context).size.width/1.4,
+          height:MediaQuery.of(context).size.height/12,
+          child: TextField(
+            decoration: InputDecoration(
+              enabledBorder: UnderlineInputBorder(      
+              borderSide: BorderSide(color: AppColors.dark_pink),   
+              ),
+            labelText:'Triglicerídeos (opcional)',
+  ),
+  keyboardType: TextInputType.number,
+  textAlign: TextAlign.center,
+),
+),
+SizedBox(height:MediaQuery.of(context).size.height/12),
+FlatButton(
+  onPressed: (){},
+  child:Text('Salvar',
+  style:TextStyle(color:Colors.white)),
+  color:Colors.blue
+),
+Image.asset('assets/images/avaliacao_medica/avaliacao_medica_img.png',
+                height:MediaQuery.of(context).size.height/2.5,
+                width:MediaQuery.of(context).size.width/2 ),
+        ] ,
+      ), 
+        ),
       ),
     );
   }

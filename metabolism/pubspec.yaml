@@ -53,6 +53,7 @@ flutter:
     - assets/images/cafe_da_manha/bacon.jpg
     - assets/images/cafe_da_manha/cafe.jpg
     - assets/images/dados_pessoais/dados_pessoais_img.png
+    - assets/images/avaliacao_medica/avaliacao_medica_img.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
