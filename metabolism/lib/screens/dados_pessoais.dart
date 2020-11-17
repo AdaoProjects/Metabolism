@@ -12,6 +12,7 @@ class Dados_Pessoais extends StatefulWidget {
 }
 
 class _Dados_PessoaisState extends State<Dados_Pessoais> with SingleTickerProviderStateMixin {
+ bool isSwitched =false;
   @override
   Widget build(BuildContext context) {
 
@@ -84,9 +85,24 @@ child:
         ],
       ),
       ),
-      body:Column(
+      body:SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child:  Column(
         children:[
           SizedBox(height:MediaQuery.of(context).size.height/18),
+          Row(children:[
+            SizedBox(width:MediaQuery.of(context).size.width/3.4),
+   isSwitched? Text('Feminino',style:TextStyle(fontSize: MediaQuery.of(context).size.width/20)):Text('Masculino',style:TextStyle(fontSize: MediaQuery.of(context).size.width/20)),
+Switch(
+            value: isSwitched,
+            onChanged: (value) {
+              setState(() {
+                isSwitched = value;
+              });
+            },
+          ),
+ ],
+ ),
           Row(children: [
             SizedBox(width:MediaQuery.of(context).size.width/7),
             Container(width:MediaQuery.of(context).size.width/1.4,
@@ -105,19 +121,8 @@ child:
          
          
 SizedBox(height:MediaQuery.of(context).size.height/23),
-Container(width:MediaQuery.of(context).size.width/1.4,
-          height:MediaQuery.of(context).size.height/12,
-          child: TextField(
-            decoration: InputDecoration(
-            enabledBorder: UnderlineInputBorder(      
-              borderSide: BorderSide(color: AppColors.dark_pink),   
-              ),
-            labelText:'Sexo',
-  ),
-  textAlign: TextAlign.center,
-),
-),
-SizedBox(height:MediaQuery.of(context).size.height/23),
+
+
 Container(width:MediaQuery.of(context).size.width/1.4,
           height:MediaQuery.of(context).size.height/12,
           child: TextField(
@@ -159,12 +164,20 @@ Container(width:MediaQuery.of(context).size.width/1.4,
   textAlign: TextAlign.center,
 ),
 ),
-SizedBox(height:MediaQuery.of(context).size.height/23),
+SizedBox(height:MediaQuery.of(context).size.height/12),
 FlatButton(
-  child:Text('Salvar')
-)
+  onPressed: (){},
+  child:Text('Salvar',
+  style:TextStyle(color:Colors.white)),
+  color:Colors.blue
+),
+Image.asset('assets/images/dados_pessoais/dados_pessoais_img.png',
+                height:MediaQuery.of(context).size.height/2.5,
+                width:MediaQuery.of(context).size.width/2.5 ),
         ] ,
-      ),
+      ), 
+        ),
+    
     );
   }
 }
