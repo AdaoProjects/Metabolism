@@ -21,21 +21,24 @@ class _Evolucao_ImcState extends State<Evolucao_Imc> with SingleTickerProviderSt
       backgroundColor: AppColors.light_yellow,
        appBar: AppBar(
         title: Text('Evolução IMC'),
+        centerTitle: true,
         backgroundColor: AppColors.dark_yellow,
       ),
-      drawer: Drawer(
+     drawer: Drawer(
 child:
  ListView(
     children: <Widget>[
        UserAccountsDrawerHeader(
   accountName: Text("Ádan Barbosa Ribeiro"),
   accountEmail: Text("adanbribeiro@gmail.com"),
-  decoration: BoxDecoration(color: AppColors.dark_yellow),
+  decoration: BoxDecoration(
+    color: AppColors.dark_green,
+  ),
   currentAccountPicture: CircleAvatar(
-    backgroundColor:Colors.white,
+    backgroundColor: Colors.white,
     child: Text(
       "A",
-      style: TextStyle(color: AppColors.dark_yellow,fontSize: MediaQuery.of(context).size.width/7),
+      style: TextStyle(fontSize: MediaQuery.of(context).size.width/7),
     ),
   ),
 ),
@@ -43,43 +46,43 @@ child:
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Dados_Pessoais()));
         },
-        title: Text("Dados Pessoais"),
-        trailing: Icon(Icons.arrow_forward),
+        title:Text("Dados Pessoais"),
+        leading: Icon(Icons.assignment),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Avaliacao_Medica()));
         },
         title: Text("Avaliação Médica"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.accessibility_new_outlined),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Rotina_Alimentar()));
         },
         title: Text("Rotina de Alimentação"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.fact_check_outlined),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Evolucao_Imc()));
         },
         title: Text("Evolução do IMC"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.analytics),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Sindrome_Metabolica()));
         },
         title: Text("Síndrome Metabólica"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.beenhere_outlined),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Dicas()));
         },
-        title: Text("Dica"),
-        trailing: Icon(Icons.arrow_forward),
+        title: Text("Dicas"),
+        leading: Icon(Icons.emoji_objects_outlined),
       ),
         ],
       ),

@@ -38,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: AppColors.light_green,
       appBar: AppBar(
         backgroundColor: AppColors.dark_green,
+        centerTitle: true,
         title: Text(widget.title),
       ),
       drawer: Drawer(
@@ -62,43 +63,43 @@ child:
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Dados_Pessoais()));
         },
-        title: Text("Dados Pessoais"),
-        trailing: Icon(Icons.arrow_forward),
+        title:Text("Dados Pessoais"),
+        leading: Icon(Icons.assignment),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Avaliacao_Medica()));
         },
         title: Text("Avaliação Médica"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.accessibility_new_outlined),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Rotina_Alimentar()));
         },
         title: Text("Rotina de Alimentação"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.fact_check_outlined),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Evolucao_Imc()));
         },
         title: Text("Evolução do IMC"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.analytics),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Sindrome_Metabolica()));
         },
         title: Text("Síndrome Metabólica"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.beenhere_outlined),
       ),
       ListTile(
         onTap: (){
            Navigator.push(context,MaterialPageRoute(builder: (context) => Dicas()));
         },
         title: Text("Dicas"),
-        trailing: Icon(Icons.arrow_forward),
+        leading: Icon(Icons.emoji_objects_outlined),
       ),
         ],
       ),
