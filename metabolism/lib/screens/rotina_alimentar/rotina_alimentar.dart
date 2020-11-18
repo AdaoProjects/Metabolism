@@ -103,6 +103,7 @@ child:
            width: MediaQuery.of(context).size.width/2.3,
           height: MediaQuery.of(context).size.height/4.2,
           child: Column(children:[
+            SizedBox(height:MediaQuery.of(context).size.height/40),
           Text('Café da Manhã',
             style:TextStyle(
                                 color: Colors.black,
@@ -113,15 +114,16 @@ child:
                                     .size
                                     .width/20)
             ),
-            SizedBox(height:MediaQuery.of(context).size.height/30),
+            SizedBox(height:MediaQuery.of(context).size.height/40),
             Text('Café'),
             Text('Pão'),
             Text('Ovos'),
+            Icon(Icons.add_box_sharp)
           ])
         )
           ),
 ),
-Card(
+  Card(
         shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
   ),
@@ -134,6 +136,7 @@ Card(
            width: MediaQuery.of(context).size.width/2.3,
           height: MediaQuery.of(context).size.height/4.2,
           child: Column(children:[
+            SizedBox(height:MediaQuery.of(context).size.height/40),
           Text('Lanche da Manhã',
             style:TextStyle(
                                 color: Colors.black,
@@ -144,10 +147,11 @@ Card(
                                     .size
                                     .width/20)
             ),
-            SizedBox(height:MediaQuery.of(context).size.height/30),
+            SizedBox(height:MediaQuery.of(context).size.height/40),
             Text('Café'),
             Text('Pão'),
             Text('Ovos'),
+            Icon(Icons.add_box_sharp)
           ])
         )
           ),
@@ -170,6 +174,7 @@ Card(
            width: MediaQuery.of(context).size.width/2.3,
           height: MediaQuery.of(context).size.height/4.2,
           child: Column(children:[
+            SizedBox(height:MediaQuery.of(context).size.height/40),
           Text('Almoço',
             style:TextStyle(
                                 color: Colors.black,
@@ -180,15 +185,16 @@ Card(
                                     .size
                                     .width/20)
             ),
-            SizedBox(height:MediaQuery.of(context).size.height/30),
+            SizedBox(height:MediaQuery.of(context).size.height/40),
             Text('Café'),
             Text('Pão'),
             Text('Ovos'),
+            Icon(Icons.add_box_sharp)
           ])
         )
           ),
 ),
-Card(
+  Card(
         shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
   ),
@@ -201,6 +207,7 @@ Card(
            width: MediaQuery.of(context).size.width/2.3,
           height: MediaQuery.of(context).size.height/4.2,
           child: Column(children:[
+            SizedBox(height:MediaQuery.of(context).size.height/40),
           Text('Lanche da Tarde',
             style:TextStyle(
                                 color: Colors.black,
@@ -211,10 +218,11 @@ Card(
                                     .size
                                     .width/20)
             ),
-            SizedBox(height:MediaQuery.of(context).size.height/30),
+            SizedBox(height:MediaQuery.of(context).size.height/40),
             Text('Café'),
             Text('Pão'),
             Text('Ovos'),
+            Icon(Icons.add_box_sharp)
           ])
         )
           ),
@@ -237,6 +245,7 @@ Card(
            width: MediaQuery.of(context).size.width/2.3,
           height: MediaQuery.of(context).size.height/4.2,
           child: Column(children:[
+            SizedBox(height:MediaQuery.of(context).size.height/40),
           Text('Jantar',
             style:TextStyle(
                                 color: Colors.black,
@@ -247,10 +256,11 @@ Card(
                                     .size
                                     .width/20)
             ),
-            SizedBox(height:MediaQuery.of(context).size.height/30),
+            SizedBox(height:MediaQuery.of(context).size.height/40),
             Text('Café'),
             Text('Pão'),
             Text('Ovos'),
+            Icon(Icons.add_box_sharp)
           ])
         )
           ),
