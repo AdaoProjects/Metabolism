@@ -35,7 +35,7 @@ child:
     backgroundColor: Colors.white,
     child: Text(
       "A",
-      style: TextStyle(fontSize: MediaQuery.of(context).size.width/7),
+      style: TextStyle(fontSize: MediaQuery.of(context).size.width/10),
     ),
   ),
 ),
@@ -87,12 +87,184 @@ child:
 
       body:Center(
     child: Column(children:[
-    
+      SizedBox(height:MediaQuery.of(context).size.width/15),
+     Row(children: [
+       SizedBox(width:MediaQuery.of(context).size.width/36.66),
+      Card(
+        shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
+  ),
+      child: InkWell(
+        splashColor: AppColors.dark_green.withAlpha(30),
+        onTap: () {
+          print('Card tapped.');
+        },
+        child: Container(
+           width: MediaQuery.of(context).size.width/2.3,
+          height: MediaQuery.of(context).size.height/4.2,
+          child: Column(children:[
+          Text('Café da Manhã',
+            style:TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontSize: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .width/20)
+            ),
+            SizedBox(height:MediaQuery.of(context).size.height/30),
+            Text('Café'),
+            Text('Pão'),
+            Text('Ovos'),
+          ])
+        )
+          ),
+),
+Card(
+        shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
+  ),
+      child: InkWell(
+        splashColor: AppColors.dark_green.withAlpha(30),
+        onTap: () {
+          print('Card tapped.');
+        },
+        child: Container(
+           width: MediaQuery.of(context).size.width/2.3,
+          height: MediaQuery.of(context).size.height/4.2,
+          child: Column(children:[
+          Text('Lanche da Manhã',
+            style:TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontSize: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .width/20)
+            ),
+            SizedBox(height:MediaQuery.of(context).size.height/30),
+            Text('Café'),
+            Text('Pão'),
+            Text('Ovos'),
+          ])
+        )
+          ),
+),
+     ],
+     ),
+
+     Row(children: [
+       SizedBox(width:MediaQuery.of(context).size.width/36.66),
+      Card(
+        shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
+  ),
+      child: InkWell(
+        splashColor: AppColors.dark_green.withAlpha(30),
+        onTap: () {
+          print('Card tapped.');
+        },
+        child: Container(
+           width: MediaQuery.of(context).size.width/2.3,
+          height: MediaQuery.of(context).size.height/4.2,
+          child: Column(children:[
+          Text('Almoço',
+            style:TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontSize: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .width/20)
+            ),
+            SizedBox(height:MediaQuery.of(context).size.height/30),
+            Text('Café'),
+            Text('Pão'),
+            Text('Ovos'),
+          ])
+        )
+          ),
+),
+Card(
+        shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
+  ),
+      child: InkWell(
+        splashColor: AppColors.dark_green.withAlpha(30),
+        onTap: () {
+          print('Card tapped.');
+        },
+        child: Container(
+           width: MediaQuery.of(context).size.width/2.3,
+          height: MediaQuery.of(context).size.height/4.2,
+          child: Column(children:[
+          Text('Lanche da Tarde',
+            style:TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontSize: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .width/20)
+            ),
+            SizedBox(height:MediaQuery.of(context).size.height/30),
+            Text('Café'),
+            Text('Pão'),
+            Text('Ovos'),
+          ])
+        )
+          ),
+),
+     ],
+     ),
+
+     Row(children: [
+       SizedBox(width:MediaQuery.of(context).size.width/36.66),
+      Card(
+        shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.circular(MediaQuery.of(context).size.width/20.0),
+  ),
+      child: InkWell(
+        splashColor: AppColors.dark_green.withAlpha(30),
+        onTap: () {
+          print('Card tapped.');
+        },
+        child: Container(
+           width: MediaQuery.of(context).size.width/2.3,
+          height: MediaQuery.of(context).size.height/4.2,
+          child: Column(children:[
+          Text('Jantar',
+            style:TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                                fontSize: MediaQuery
+                                    .of(context)
+                                    .size
+                                    .width/20)
+            ),
+            SizedBox(height:MediaQuery.of(context).size.height/30),
+            Text('Café'),
+            Text('Pão'),
+            Text('Ovos'),
+          ])
+        )
+          ),
+),
+     ],
+     ),
     ]
     ),
-
     ),
-    
+    floatingActionButton: FloatingActionButton(
+      backgroundColor: AppColors.dark_blue,
+      child: Icon(Icons.plus_one_rounded),
+      onPressed: (){},
+    ),
     );
   }
 }

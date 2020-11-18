@@ -118,7 +118,7 @@ child:
                                 fontSize: MediaQuery
                                     .of(context)
                                     .size
-                                    .height / 30)
+                                    .width/20)
             ),
           ],
           
@@ -153,7 +153,7 @@ child:
                                 fontSize: MediaQuery
                                     .of(context)
                                     .size
-                                    .height / 30)
+                                    .width/20)
             ),
           ],
           
@@ -192,7 +192,7 @@ child:
                                 fontSize: MediaQuery
                                     .of(context)
                                     .size
-                                    .height / 30)
+                                    .width/20)
             ),
           ],
           
@@ -227,7 +227,7 @@ child:
                                 fontSize: MediaQuery
                                     .of(context)
                                     .size
-                                    .height / 30)
+                                    .width/20)
             ),
           ],
           
@@ -266,7 +266,7 @@ child:
                                 fontSize: MediaQuery
                                     .of(context)
                                     .size
-                                    .height / 30)
+                                    .width/20)
             ),
           ],
           
@@ -302,7 +302,7 @@ child:
                                 fontSize: MediaQuery
                                     .of(context)
                                     .size
-                                    .height / 30)
+                                    .width/20)
             ),
           ],
           
