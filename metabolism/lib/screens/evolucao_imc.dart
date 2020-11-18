@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:metabolism/screens/avaliacao_medica.dart';
 import 'package:metabolism/screens/dados_pessoais.dart';
 import 'package:metabolism/screens/dicas.dart';
-import 'package:metabolism/screens/rotina_alimentar.dart';
+import 'package:metabolism/screens/rotina_alimentar/rotina_alimentar.dart';
 import 'package:metabolism/screens/sindrome_metabolica.dart';
 import 'package:metabolism/utilities/colors.dart';
 import 'package:fl_chart/fl_chart.dart';
@@ -32,7 +32,7 @@ child:
   accountName: Text("Ádan Barbosa Ribeiro"),
   accountEmail: Text("adanbribeiro@gmail.com"),
   decoration: BoxDecoration(
-    color: AppColors.dark_green,
+    color: AppColors.dark_yellow,
   ),
   currentAccountPicture: CircleAvatar(
     backgroundColor: Colors.white,

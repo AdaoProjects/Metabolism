@@ -1,10 +1,15 @@
 import 'dart:ui';
 
-/// Util class with the game colors.
+import 'package:flutter/material.dart';
+
 class AppColors {
   AppColors._();
 
-  /// Primary color.
+
+  static const dark_blue = Colors.blue;
+
+  static const light_blue = Color(0xFFbbdefb);
+
   static const dark_green = Color(0xFF097770);
 
   static const light_green = Color(0xFFa9c0a6);

@@ -14,11 +14,12 @@ class Rotina_Alimentar extends StatefulWidget {
 class _Rotina_AlimentarState extends State<Rotina_Alimentar> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-       appBar: AppBar(
-        title: Text('Rotina Alimentar'),
+      backgroundColor: AppColors.light_blue,
+      appBar: AppBar(
+        backgroundColor: AppColors.dark_blue,
         centerTitle: true,
+        title: Text("Rotina Alimentar"),
       ),
       drawer: Drawer(
 child:
@@ -28,7 +29,7 @@ child:
   accountName: Text("Ádan Barbosa Ribeiro"),
   accountEmail: Text("adanbribeiro@gmail.com"),
   decoration: BoxDecoration(
-    color: AppColors.dark_green,
+    color: AppColors.dark_blue,
   ),
   currentAccountPicture: CircleAvatar(
     backgroundColor: Colors.white,
@@ -83,9 +84,15 @@ child:
         ],
       ),
       ),
+
       body:Center(
-        child: Text('Rotina Alimentar'),
-      ),
+    child: Column(children:[
+    
+    ]
+    ),
+
+    ),
+    
     );
   }
 }

@@ -46,12 +46,13 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/cafe_da_manha/ovos.jpg
-    - assets/images/cafe_da_manha/pao.jpg
-    - assets/images/cafe_da_manha/cuscuz.jpg
-    - assets/images/cafe_da_manha/leite.jpg
-    - assets/images/cafe_da_manha/bacon.jpg
-    - assets/images/cafe_da_manha/cafe.jpg
+    - assets/images/start_img.jpg
+    - assets/images/alimentos/ovos.jpg
+    - assets/images/alimentos/pao.jpg
+    - assets/images/alimentos/cuscuz.jpg
+    - assets/images/alimentos/leite.jpg
+    - assets/images/alimentos/bacon.jpg
+    - assets/images/alimentos/cafe.jpg
     - assets/images/dados_pessoais/dados_pessoais_img.png
     - assets/images/avaliacao_medica/avaliacao_medica_img.png
 

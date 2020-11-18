@@ -3,7 +3,7 @@ import 'package:metabolism/screens/avaliacao_medica.dart';
 import 'package:metabolism/screens/dados_pessoais.dart';
 import 'package:metabolism/screens/dicas.dart';
 import 'package:metabolism/screens/evolucao_imc.dart';
-import 'package:metabolism/screens/rotina_alimentar.dart';
+import 'package:metabolism/screens/rotina_alimentar/rotina_alimentar.dart';
 import 'package:metabolism/utilities/colors.dart';
 
 
